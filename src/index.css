@@ -9,16 +9,25 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 200 20% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 200 20% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 200 20% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --brand: 168 72% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-glow: 168 65% 42%;
+
+    --primary: 168 72% 32%;
+    --primary-foreground: 0 0% 100%;
+
+    --hero-overlay: 200 30% 8%;
+    --gradient-brand: linear-gradient(135deg, hsl(168 72% 32%), hsl(178 70% 40%));
+    --shadow-card: 0 4px 24px -8px hsl(200 25% 20% / 0.12);
+    --shadow-elevated: 0 12px 40px -12px hsl(168 72% 32% / 0.25);
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
