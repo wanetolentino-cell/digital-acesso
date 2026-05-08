@@ -6,12 +6,10 @@ import {
   TrendingUp, Users, ChevronDown, Menu, X, ArrowRight, Send
 } from "lucide-react";
 import heroImg from "@/assets/hero-fintech.jpg";
+import grafenoLogo from "@/assets/grafeno-logo.png";
 
-const Logo = () => (
-  <div className="flex items-center gap-2">
-    <Send className="h-7 w-7 text-brand -rotate-12" strokeWidth={2.5} />
-    <span className="text-2xl font-bold tracking-tight text-foreground">GRAFENO</span>
-  </div>
+const Logo = ({ className = "h-9" }: { className?: string }) => (
+  <img src={grafenoLogo} alt="Grafeno" className={`${className} w-auto`} />
 );
 
 const Header = () => {
@@ -175,10 +173,7 @@ const Footer = () => (
   <footer className="bg-foreground text-background/80 py-16">
     <div className="container grid md:grid-cols-4 gap-10">
       <div>
-        <div className="flex items-center gap-2">
-          <Send className="h-7 w-7 text-brand-glow -rotate-12" strokeWidth={2.5} />
-          <span className="text-2xl font-bold text-background">GRAFENO</span>
-        </div>
+        <img src={grafenoLogo} alt="Grafeno" className="h-9 w-auto bg-background rounded px-2 py-1" />
         <p className="mt-4 text-sm">Infraestrutura financeira para o mercado de crédito.</p>
       </div>
       {[
