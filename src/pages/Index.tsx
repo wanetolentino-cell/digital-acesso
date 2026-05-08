@@ -30,7 +30,7 @@ const Header = () => {
           </a>
         </nav>
         <div className="hidden lg:flex items-center gap-3">
-          <Button variant="outline" size="lg" className="rounded-md text-base px-8 h-12">Área do cliente</Button>
+          <Button variant="outline" size="lg" className="rounded-md text-base px-8 h-12 hover:bg-brand hover:text-brand-foreground hover:border-brand">Área do cliente</Button>
           <Button size="lg" className="rounded-md bg-brand hover:bg-brand-glow text-brand-foreground text-base px-8 h-12">Abrir conta</Button>
         </div>
         <button className="lg:hidden" onClick={() => setOpen(!open)} aria-label="Menu">
