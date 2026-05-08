@@ -8,7 +8,7 @@ import {
 import heroImg from "@/assets/hero-fintech.jpg";
 import grafenoLogo from "@/assets/grafeno-logo.png";
 
-const Logo = ({ className = "h-9" }: { className?: string }) => (
+const Logo = ({ className = "h-12" }: { className?: string }) => (
   <img src={grafenoLogo} alt="Grafeno" className={`${className} w-auto`} />
 );
 
@@ -30,8 +30,8 @@ const Header = () => {
           </a>
         </nav>
         <div className="hidden lg:flex items-center gap-3">
-          <Button variant="outline" className="rounded-full">Área do cliente</Button>
-          <Button className="rounded-full bg-brand hover:bg-brand-glow text-brand-foreground">Abrir conta</Button>
+          <Button variant="outline" className="rounded-md">Área do cliente</Button>
+          <Button className="rounded-md bg-brand hover:bg-brand-glow text-brand-foreground">Abrir conta</Button>
         </div>
         <button className="lg:hidden" onClick={() => setOpen(!open)} aria-label="Menu">
           {open ? <X /> : <Menu />}
@@ -42,8 +42,8 @@ const Header = () => {
           <a href="#solucoes" className="block text-foreground">Soluções</a>
           <a href="#grafeno" className="block text-foreground">A Grafeno</a>
           <a href="#dev" className="block text-foreground">Desenvolvedores</a>
-          <Button variant="outline" className="w-full rounded-full">Área do cliente</Button>
-          <Button className="w-full rounded-full bg-brand hover:bg-brand-glow text-brand-foreground">Abrir conta</Button>
+          <Button variant="outline" className="w-full rounded-md">Área do cliente</Button>
+          <Button className="w-full rounded-md bg-brand hover:bg-brand-glow text-brand-foreground">Abrir conta</Button>
         </div>
       )}
     </header>
