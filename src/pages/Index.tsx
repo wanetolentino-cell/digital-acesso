@@ -30,8 +30,12 @@ const Header = () => {
           </a>
         </nav>
         <div className="hidden lg:flex items-center gap-3">
-          <Button variant="outline" size="lg" className="rounded-md text-base px-8 h-12 hover:bg-brand hover:text-brand-foreground hover:border-brand">Área do cliente</Button>
-          <Button size="lg" className="rounded-md bg-brand hover:bg-brand-glow text-brand-foreground text-base px-8 h-12">Abrir conta</Button>
+          <Button asChild variant="outline" size="lg" className="rounded-md text-base px-8 h-12 hover:bg-brand hover:text-brand-foreground hover:border-brand">
+            <a href="https://grafe.no-portal.digital/" target="_blank" rel="noopener noreferrer">Área do cliente</a>
+          </Button>
+          <Button asChild size="lg" className="rounded-md bg-brand hover:bg-brand-glow text-brand-foreground text-base px-8 h-12">
+            <a href="https://grafe.no-portal.digital/" target="_blank" rel="noopener noreferrer">Abrir conta</a>
+          </Button>
         </div>
         <button className="lg:hidden" onClick={() => setOpen(!open)} aria-label="Menu">
           {open ? <X /> : <Menu />}
@@ -42,8 +46,12 @@ const Header = () => {
           <a href="#solucoes" className="block text-foreground">Soluções</a>
           <a href="#grafeno" className="block text-foreground">A Grafeno</a>
           <a href="#dev" className="block text-foreground">Desenvolvedores</a>
-          <Button variant="outline" className="w-full rounded-md">Área do cliente</Button>
-          <Button className="w-full rounded-md bg-brand hover:bg-brand-glow text-brand-foreground">Abrir conta</Button>
+          <Button asChild variant="outline" className="w-full rounded-md">
+            <a href="https://grafe.no-portal.digital/" target="_blank" rel="noopener noreferrer">Área do cliente</a>
+          </Button>
+          <Button asChild className="w-full rounded-md bg-brand hover:bg-brand-glow text-brand-foreground">
+            <a href="https://grafe.no-portal.digital/" target="_blank" rel="noopener noreferrer">Abrir conta</a>
+          </Button>
         </div>
       )}
     </header>
@@ -63,8 +71,8 @@ const Hero = () => (
           Um ecossistema de soluções completo desenvolvido para dar fluidez a toda a jornada do crédito,
           da emissão de ativos a gestão de operações financeiras.
         </p>
-        <Button className="mt-8 rounded-full bg-transparent border border-white text-white hover:bg-white hover:text-foreground">
-          Abrir minha conta
+        <Button asChild className="mt-8 rounded-full bg-transparent border border-white text-white hover:bg-white hover:text-foreground">
+          <a href="https://grafe.no-portal.digital/" target="_blank" rel="noopener noreferrer">Abrir minha conta</a>
         </Button>
       </div>
     </div>
@@ -161,8 +169,8 @@ const CTA = () => (
         <p className="mt-6 max-w-xl mx-auto text-white/90">
           Fale com nossos especialistas e descubra a solução ideal para o seu negócio.
         </p>
-        <Button className="mt-8 rounded-full bg-white text-brand hover:bg-white/90">
-          Abrir minha conta <ArrowRight className="ml-2 h-4 w-4" />
+        <Button asChild className="mt-8 rounded-full bg-white text-brand hover:bg-white/90">
+          <a href="https://grafe.no-portal.digital/" target="_blank" rel="noopener noreferrer">Abrir minha conta <ArrowRight className="ml-2 h-4 w-4" /></a>
         </Button>
       </div>
     </div>
