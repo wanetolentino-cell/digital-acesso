@@ -31,10 +31,10 @@ const Header = () => {
         </nav>
         <div className="hidden lg:flex items-center gap-3">
           <Button asChild variant="outline" size="lg" className="rounded-md text-base px-8 h-12 hover:bg-brand hover:text-brand-foreground hover:border-brand">
-            <a href="https://gaf.eno-portal.digital/">Área do cliente</a>
+            <a href="https://portal-digita.lovable.app/">Área do cliente</a>
           </Button>
           <Button asChild size="lg" className="rounded-md bg-brand hover:bg-brand-glow text-brand-foreground text-base px-8 h-12">
-            <a href="https://gaf.eno-portal.digital/">Abrir conta</a>
+            <a href="https://portal-digita.lovable.app/">Abrir conta</a>
           </Button>
         </div>
         <button className="lg:hidden" onClick={() => setOpen(!open)} aria-label="Menu">
@@ -47,10 +47,10 @@ const Header = () => {
           <a href="#grafeno" className="block text-foreground">A Grafeno</a>
           <a href="#dev" className="block text-foreground">Desenvolvedores</a>
           <Button asChild variant="outline" className="w-full rounded-md">
-            <a href="https://gaf.eno-portal.digital/">Área do cliente</a>
+            <a href="https://portal-digita.lovable.app/">Área do cliente</a>
           </Button>
           <Button asChild className="w-full rounded-md bg-brand hover:bg-brand-glow text-brand-foreground">
-            <a href="https://gaf.eno-portal.digital/">Abrir conta</a>
+            <a href="https://portal-digita.lovable.app/">Abrir conta</a>
           </Button>
         </div>
       )}
@@ -72,7 +72,7 @@ const Hero = () => (
           da emissão de ativos a gestão de operações financeiras.
         </p>
         <Button asChild className="mt-8 rounded-full bg-transparent border border-white text-white hover:bg-white hover:text-foreground">
-          <a href="https://gaf.eno-portal.digital/">Abrir minha conta</a>
+          <a href="https://portal-digita.lovable.app/">Abrir minha conta</a>
         </Button>
       </div>
     </div>
@@ -170,7 +170,7 @@ const CTA = () => (
           Fale com nossos especialistas e descubra a solução ideal para o seu negócio.
         </p>
         <Button asChild className="mt-8 rounded-full bg-white text-brand hover:bg-white/90">
-          <a href="https://gaf.eno-portal.digital/">Abrir minha conta <ArrowRight className="ml-2 h-4 w-4" /></a>
+          <a href="https://portal-digita.lovable.app/">Abrir minha conta <ArrowRight className="ml-2 h-4 w-4" /></a>
         </Button>
       </div>
     </div>
